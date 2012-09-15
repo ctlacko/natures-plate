@@ -4,29 +4,33 @@
        weight: 'normal';
        style: 'normal';
     }
-    src: asset-url('fonts/berlinsans.ttf', font);
-    src: asset-url('fonts/berlinsans.ttf', font) format('truetype');
+    src: asset-url('berlinsans.ttf', font);
+    src: asset-url('berlinsans.ttf', font) format('truetype');
 }
 #logo
 {
   font-family: "Berlin Sans FB", sans-serif; 
-  font-size: 61px;
+  font-size: 5.10em;
   color: #92d050;
-  margin-left: 49px;
-  margin-top: 104px;
+  margin-left: 23px;
+  margin-top: 19px;
+  width: inherit;
 }
 #logo-subtitle
 {
   color: #000000;
+  font-size: 2.55em;
   margin-left:133px;
+  width: inherit;
 
 }
 
 body {
   background: #FFFFFF;
   font-family: "Berlin Sans FB";
-  font-size: 13px;
+  font-size: 1.05em;
   line-height: 18px;
+  width: inherit;
 }
 
 #body_content, #side_body_content {
@@ -38,41 +42,51 @@ body {
 }
 
 #Philosophy-menu-item {
+  width: inherit;
   background: #d9b28b;
+  text-align: left;
+  display: inline;
 }
 #Menu-menu-item {
   background: #4f81bd;
+  width: inherit;
 }
 #Order-menu-item {
   background: #c0504d;
+  width: inherit;
 }
 #FAQ-menu-item {
   background: #9bbb59;
+  width: inherit;
 }
 #Home-menu-item {
   background: #9bbb59;
+  width: inherit;
 }
 #Contact-menu-item {
+  width: inherit;
   background: #d9b28b;
 }
 #menu ul {
+  width:inherit;
   list-style: none;
   padding: 0px;
   margin-left: 84px;
+  text-align:center;
   li {
-    display: block;
+    display: inline;
     float:left;
+    width: 6%;
     margin-left: 11px;
     padding-left: 37px;
     padding-right: 37px;
     padding-top: 16px;
     padding-bottom: 11px;
-    font-size: 16px;
+    text-align:center;
     a {
-      display: block;
-      padding: 5px 10px;
       text-decoration: none;
-      font-size: 16px;
+      width: inherit;
+      font-size: 1.25em;
       color: #FFFFFF;
     }
   }
