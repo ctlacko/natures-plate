@@ -1,0 +1,39 @@
+/*
+  These only apply to the homepage of your site.
+*/
+#body{
+    background: #9bbb59;
+    float: right;
+    color: #FFFFFF;
+  width: 55%;
+    display: inline;
+    position: absolute;
+  top: 430px;
+  height: 175px;
+  left: 452px;
+  padding: 20px 20px 20px 20px;
+}
+#bottom_body {
+  position: absolute;
+  height: 175px;
+  top: 677px;
+  left: 452px;
+  width: 55%;
+  display: inline;
+  background: #4f81bd;
+  float: right;
+  color: #FFFFFF;
+  padding: 20px 20px 20px 20px;
+}
+#sidebar {
+  padding: 20px 20px 20px 20px;
+  width: 313px;
+  height: 423px;
+  position: absolute;
+  top: 430px;
+  display: inline;
+  background: #d9b28b;
+  float:left;
+  margin-left: 23px;
+  color: #FFFFFF;
+}
