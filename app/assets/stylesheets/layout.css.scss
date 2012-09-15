@@ -1,10 +1,80 @@
 @font-face {
-  font-family: Berlin;
-  src: url('/app/assets/BRLNSR.TTF') format('truetype');
+    font: {
+       family: 'Berlin Sans FB';
+       weight: 'normal';
+       style: 'normal';
+    }
+    src: asset-url('fonts/berlinsans.ttf', font);
+    src: asset-url('fonts/berlinsans.ttf', font) format('truetype');
 }
-h1#logo
+#logo
 {
-  font-family: Berlin, sans-serif; 
+  font-family: "Berlin Sans FB", sans-serif; 
   font-size: 61px;
+  color: #92d050;
+  margin-left: 49px;
+  margin-top: 104px;
+}
+#logo-subtitle
+{
+  color: #000000;
+  margin-left:133px;
+
+}
+
+body {
+  background: #FFFFFF;
+  font-family: "Berlin Sans FB";
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#body_content, #side_body_content {
+  float: left;
+  width: 45%;
+  background: white;
+  color: #333;
+  padding: 20px;
+}
+
+#Philosophy-menu-item {
+  background: #d9b28b;
+}
+#Menu-menu-item {
+  background: #4f81bd;
+}
+#Order-menu-item {
+  background: #c0504d;
+}
+#FAQ-menu-item {
+  background: #9bbb59;
+}
+#Home-menu-item {
+  background: #9bbb59;
+}
+#Contact-menu-item {
+  background: #d9b28b;
+}
+#menu ul {
+  list-style: none;
+  padding: 0px;
+  margin-left: 84px;
+  li {
+    display: block;
+    float:left;
+    margin-left: 11px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 16px;
+    padding-bottom: 11px;
+    font-size: 16px;
+    a {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+  }
 }
 
