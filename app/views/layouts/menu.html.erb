@@ -1,0 +1,14 @@
+<%= render :partial => '/refinery/head' %>
+
+<%= render :partial => '/refinery/header' %>
+
+<!--<div id='philosophy-body'>-->
+  <section id='menu_content'>
+  <%=raw @page.content_for(:body) %>
+  </section>
+  <section id='side_menu_content'>
+  <%=raw @page.content_for(:side_body) %>
+  </section>
+
+
+  <!--</div>-->
