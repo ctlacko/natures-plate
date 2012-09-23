@@ -42,29 +42,21 @@ body {
 }
 
 #Philosophy-menu-item {
-  width: inherit;
   background: #d9b28b;
-  text-align: left;
-  display: inline;
 }
 #Menu-menu-item {
   background: #4f81bd;
-  width: inherit;
 }
 #Order-menu-item {
   background: #c0504d;
-  width: inherit;
 }
 #FAQ-menu-item {
   background: #9bbb59;
-  width: inherit;
 }
 #Home-menu-item {
   background: #9bbb59;
-  width: inherit;
 }
 #Contact-menu-item {
-  width: inherit;
   background: #d9b28b;
 }
 #menu ul {
@@ -72,11 +64,10 @@ body {
   list-style: none;
   padding: 0px;
   margin-left: 84px;
-  text-align:center;
   li {
     display: inline;
     float:left;
-    width: 6%;
+    width: 75px;
     margin-left: 11px;
     padding-left: 37px;
     padding-right: 37px;
@@ -84,6 +75,7 @@ body {
     padding-bottom: 11px;
     text-align:center;
     a {
+      text-align:center;
       text-decoration: none;
       width: inherit;
       font-size: 1.25em;

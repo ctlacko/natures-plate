@@ -3,6 +3,22 @@ Refinery::Pages.configure do |config|
   # config.types.register :home do |home|
   #   home.parts = %w[intro body]
   # end
+  #
+  config.types.register :philosophy do |philosophy|
+    philosophy.parts = %w[body]
+  end
+  config.types.register :order do |order|
+    order.parts = %w[body]
+  end
+  config.types.register :menu do |menu|
+    menu.parts = %w[body side_body]
+  end
+  config.types.register :contact do |contact|
+    contact.parts = %w[body]
+  end
+  config.types.register :faq do |faq|
+    faq.parts = %w[body]
+  end
 
   # Configure global page default parts
   config.default_parts = ["Body", "Side Body"]
@@ -38,13 +54,13 @@ Refinery::Pages.configure do |config|
   # Set this to true to fully expand the page hierarchy in the admin
   # config.auto_expand_admin_tree = true
 
-  config.layout_template_whitelist = ["application"]
+  config.layout_template_whitelist = ["application", "philosophy", "order", "menu", "faq", "contact"]
 
-  # config.view_template_whitelist = ["home", "show"]
+  config.view_template_whitelist = ["home", "show", "philosophy"]
 
   config.use_layout_templates = true
 
-  # config.use_view_templates = false
+  config.use_view_templates = false
 
   # config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 
