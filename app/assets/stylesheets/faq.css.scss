@@ -1,9 +1,13 @@
+$np-blue: #4f81bd;
+$np-green: #92d050;
+$np-grey: #c0c0c0;
+
 #faq_content{
   position: absolute;
   top: 430px;
   margin-left:96px;
   width: 72%;
-  background: #9bbb59;
+  background: $np-green;
   color: #FFFFFF;
   padding: 10px 20px 20px 20px;
 }

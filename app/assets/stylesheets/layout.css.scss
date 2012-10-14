@@ -7,6 +7,13 @@
     src: asset-url('berlinsans.ttf', font);
     src: asset-url('berlinsans.ttf', font) format('truetype');
 }
+$np-blue: #4f81bd;
+$np-green: #92d050;
+$np-grey: #c0c0c0;
+$np-red: #c0504d;
+.selected {
+  background: $np-grey;
+}
 #logo
 {
   font-family: "Berlin Sans FB", sans-serif; 
@@ -42,24 +49,27 @@ body {
 }
 
 #Philosophy-menu-item {
-  background: #d9b28b;
+  background: $np-green;
 }
 #Menu-menu-item {
   background: #4f81bd;
 }
 #Order-menu-item {
-  background: #c0504d;
+  background: $np-red;
 }
 #FAQ-menu-item {
-  background: #9bbb59;
+  background: $np-green;
 }
 #Home-menu-item {
-  background: #9bbb59;
+  background: $np-blue;
 }
 #Contact-menu-item {
-  background: #d9b28b;
+  background: $np-red;
 }
 #menu ul {
+  .selected {
+    background: $np-grey;
+  }
   width:inherit;
   list-style: none;
   padding: 0px;
