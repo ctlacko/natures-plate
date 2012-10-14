@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120908164821) do
+ActiveRecord::Schema.define(:version => 20121014202745) do
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -86,6 +86,31 @@ ActiveRecord::Schema.define(:version => 20120908164821) do
   add_index "refinery_pages", ["lft"], :name => "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
+
+  create_table "refinery_recipes", :force => true do |t|
+    t.string   "name"
+    t.float    "price_reg"
+    t.float    "price_lg"
+    t.float    "price_fam"
+    t.string   "course"
+    t.text     "description"
+    t.string   "ingredients"
+    t.integer  "calories_reg"
+    t.integer  "calories_lg"
+    t.integer  "calories_fam"
+    t.integer  "fat_reg"
+    t.integer  "fat_lg"
+    t.integer  "fat_fam"
+    t.integer  "carbs_reg"
+    t.integer  "carbs_lg"
+    t.integer  "carbs_fam"
+    t.integer  "fiber_reg"
+    t.integer  "fiber_lg"
+    t.integer  "fiber_fam"
+    t.integer  "position"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "refinery_resources", :force => true do |t|
     t.string   "file_mime_type"

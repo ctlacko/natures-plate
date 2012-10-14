@@ -19,6 +19,9 @@ Refinery::Pages.configure do |config|
   config.types.register :faq do |faq|
     faq.parts = %w[body]
   end
+  config.types.register :recipe do |recipe|
+    recipe.parts = %w[body nutrition_info]
+  end
 
   # Configure global page default parts
   config.default_parts = ["Body", "Side Body"]
@@ -54,7 +57,7 @@ Refinery::Pages.configure do |config|
   # Set this to true to fully expand the page hierarchy in the admin
   # config.auto_expand_admin_tree = true
 
-  config.layout_template_whitelist = ["application", "philosophy", "order", "menu", "faq", "contact"]
+  config.layout_template_whitelist = ["application", "philosophy", "order", "menu", "faq", "contact", "recipe"]
 
   config.view_template_whitelist = ["home", "show", "philosophy"]
 

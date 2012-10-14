@@ -8,3 +8,9 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Menu Engines extension
+# Refinery::MenuEngines::Engine.load_seed
+
+# Added by Refinery CMS Recipes extension
+Refinery::Recipes::Engine.load_seed
